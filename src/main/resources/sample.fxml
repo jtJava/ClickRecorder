@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.text.Text?>
+<VBox alignment="CENTER" xmlns:fx="http://javafx.com/fxml/1" fx:id="mainPane" maxHeight="400.0" maxWidth="400"
+      minHeight="400" spacing="20" minWidth="450" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.172-ea"
+      style="-fx-background-color: #282a36">
+    <JFXButton fx:id="saveAsButton" alignment="CENTER" buttonType="RAISED" layoutX="230.0" layoutY="68.0"
+               lineSpacing="2.0"
+               mnemonicParsing="false" prefHeight="20.0" prefWidth="154.0" text="Save As"
+               ripplerFill="#eeeeee" style="-fx-background-color: #066cd3;"
+               textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+        <font>
+            <Font size="19.0"/>
+        </font>
+        <graphic>
+            <FontAwesomeIconView fill="white" glyphName="CLOUD_DOWNLOAD" glyphSize="20"/>
+        </graphic>
+    </JFXButton>
+
+    <JFXButton fx:id="copyButton" alignment="CENTER" buttonType="RAISED" layoutX="230.0" layoutY="68.0"
+               lineSpacing="2.0"
+               mnemonicParsing="false" prefHeight="20.0" prefWidth="154.0" text="Copy"
+               ripplerFill="#eeeeee" style="-fx-background-color: #066cd3;"
+               textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+        <font>
+            <Font size="19.0"/>
+        </font>
+        <graphic>
+            <FontAwesomeIconView fill="white" glyphName="COPY" glyphSize="20"/>
+        </graphic>
+    </JFXButton>
+
+    <JFXButton fx:id="clickRecorderButton" alignment="CENTER" buttonType="RAISED" layoutX="180.0" layoutY="164.0"
+               lineSpacing="2.0"
+               mnemonicParsing="false" prefHeight="100.0" prefWidth="254.0" text="Record Click"
+               ripplerFill="#eeeeee" style="-fx-background-color: #066cd3;"
+               textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+        <font>
+            <Font size="19.0"/>
+        </font>
+        <graphic>
+            <FontAwesomeIconView fill="white" glyphName="MAGIC" glyphSize="20"/>
+        </graphic>
+    </JFXButton>
+
+    <JFXButton fx:id="infoButton" alignment="CENTER" buttonType="RAISED" layoutX="100.0" layoutY="100.0"
+               lineSpacing="2.0"
+               mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="?"
+               ripplerFill="#eeeeee" style="-fx-background-color: #066cd3;"
+               textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+        <font>
+            <Font size="19.0"/>
+        </font>
+    </JFXButton>
+
+    <JFXSpinner fx:id="spinner" styleClass="jfx-spinner" progress="0"
+                radius="45"/>
+</VBox>

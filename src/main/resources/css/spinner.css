@@ -1,0 +1,39 @@
+/*******************************************************************************
+*                                                                              *
+* JFX Spinner                                                                  *
+*                                                                              *
+*******************************************************************************/
+.jfx-spinner:determinate .arc{
+    -fx-stroke: #066cd3;
+    -fx-stroke-width: 6.0;
+}
+
+.jfx-spinner:determinate .percentage{
+    -fx-fill: #FFFFFF;
+}
+
+
+
+/*.jfx-spinner .arc {
+    -fx-stroke-width: 12.0;
+}
+
+/*.jfx-spinner .text {
+    -fx-text-fill: #FFFFFF;
+}
+
+.jfx-spinner .track {
+    -fx-stroke: #066cd3;
+}
+
+.jfx-spinner:indeterminate .arc {
+    -fx-stroke: #066cd3;
+}
+
+.jfx-spinner .percentage {
+    -fx-fill: #FFFFFF;
+}
+
+.jfx-spinner .text {
+    visibility: true;
+}
