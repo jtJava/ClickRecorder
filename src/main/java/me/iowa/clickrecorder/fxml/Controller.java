@@ -6,23 +6,17 @@ import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
-import javafx.scene.control.Tooltip;
 import javafx.scene.input.MouseButton;
-import javafx.scene.text.Text;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import me.iowa.clickrecorder.Data;
-import me.iowa.clickrecorder.util.AlertBuilder;
 
 import java.io.File;
-import java.io.IOException;
 
 public class Controller {
 
-    private final Stage stage;
+    private final Stage stage = null;
 
     private final Data data = new Data();
 
@@ -33,7 +27,7 @@ public class Controller {
     public JFXSpinner spinner;
 
     public Controller() {
-        this.stage = new Stage();
+        /*this.stage = new Stage();
 
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("sample.fxml"));
@@ -48,9 +42,9 @@ public class Controller {
 
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
 
-        AlertBuilder builder = new AlertBuilder(infoButton);
+        /*AlertBuilder builder = new AlertBuilder(infoButton);
         builder.body("Click in the \"Record Click\" box until the percentage below reaches 100%.\n" +
                 "Press \"Save As\" to save the data set.\n" +
                 "Press \"Copy\" to copy the data set to your clipboard.")
@@ -58,17 +52,12 @@ public class Controller {
                 .title("Information")
                 .closeButtonText("Okay")
                 .overlayClose(false)
-                .build();
+                .build();*/
     }
-
-    public void showStage() {
-        this.stage.showAndWait();
-    }
-
 
     // injection
     @FXML
-    private void initialize() {
+    public void initialize() {
         clickRecorderButton.setOnMousePressed(event -> {
             if (event.getButton() == MouseButton.PRIMARY) {
                 mouseDown();

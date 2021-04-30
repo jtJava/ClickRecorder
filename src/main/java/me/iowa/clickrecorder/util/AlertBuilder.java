@@ -3,11 +3,9 @@ package me.iowa.clickrecorder.util;
 import com.jfoenix.controls.JFXAlert;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXDialogLayout;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import lombok.experimental.UtilityClass;
 
 
 public class AlertBuilder {
@@ -26,6 +24,7 @@ public class AlertBuilder {
             alert.hideWithAnimation();
         });
 
+        System.out.println(originalButton);
         alert = new JFXAlert((Stage) originalButton.getScene().getWindow());
         alert.initModality(Modality.APPLICATION_MODAL);
         alert.setOverlayClose(false);
